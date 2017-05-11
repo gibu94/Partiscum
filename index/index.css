@@ -76,7 +76,7 @@ nav {
 }
 
 nav ul li {
-    padding: 0px 0px 10px 20px;
+    padding: 0px 0px 10px 30px;
     font-size: 160%;
 }
 
@@ -97,6 +97,11 @@ nav ul li {
 .clearfix1 {
     clear: both;
     padding: 1%;
+}
+
+.clearfix2 {
+    clear: both;
+    padding: 2%;
 }
 
 /*----Oszlopok----*/
@@ -200,7 +205,7 @@ img.icon2 {
 
 .orderbtn {
     text-align: center;
-    padding-top: 2%;
+    padding-top: 1.5%;
 }
 
 /*------ Megrendelo gomb end ------*/
@@ -208,6 +213,138 @@ img.icon2 {
 
 
 /*----Kozepso resz end----*/
+
+
+/*----- Footer start ----*/
+
+footer {
+    background: #084a58;
+    overflow: hidden;
+    opacity: .9;
+}
+
+#footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.one-third-footer {
+    width: 29%;
+    float: left;
+    margin: 2%;
+}
+
+.one-third-footer h3 {
+    color: #DFEAEC;
+    font-family: 'Ubuntu Condensed', cursive;
+    text-transform: none;
+    text-align: center;
+    font-size: 160%;
+}
+
+.one-third-footer h5 {
+    color: #DFEAEC;
+    font-family: 'Ubuntu Condensed', cursive;
+    text-transform: none;
+    text-align: center;
+    font-size: 140%;
+}
+
+
+.one-third-footer p {
+    color: #DFEAEC;
+    text-align: center;
+    font-family: 'Ubuntu Condensed', cursive;
+    text-transform: none;
+    font-size: 120%;
+}
+
+.one-third-footer a {
+    text-decoration: none;
+    color: #DFEAEC;
+    font-size: 100%;
+}
+
+#social {
+   text-align: center;
+}
+
+.socialicon {
+    display: inline-block;
+    padding-left: auto;
+    padding-right: auto;
+    margin: 5%;
+}
+
+footer .current {
+    color: #ff7759;
+}
+
+footer a:hover {
+    color: #ff7759;
+}
+
+
+#footer-third-last ul {
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+#menulist {
+    display: inline-flex;
+    text-align: center;
+}
+
+#menulist ul {
+    margin-right: 10%;
+}
+
+#footer-third-last {
+    text-align: center;
+}
+
+#footer-third1 {
+    border-right: 1px solid #DFEAEC;
+    max-height: 150px;
+    min-height: 150px;
+}
+
+#footer-third2 {
+    max-height: 150px;
+    min-height: 150px;
+}
+
+#footer-third-last {
+    border-left: 1px solid #DFEAEC;
+    max-height: 150px;
+    min-height: 150px;
+}
+
+#footer-third-last h3 {
+    padding-bottom: 1%;
+}
+
+footer.second {
+    border-top: 1px solid #DFEAEC;
+    max-height: 100px;
+    padding-bottom: 1%;
+    color: #084a58;
+    text-align: center;
+}
+
+.second p {
+    text-align: center;
+    font-size: 100%;
+    color: #DFEAEC;
+    padding-top: 1%;
+}
+
+.second a {
+    text-decoration: none;
+    color: #DFEAEC;
+}
+
+/*----- Footer end ----*/
 
 
 
@@ -285,15 +422,99 @@ img.icon2 {
         height: 120px;
     }
     /*----Oszlop screen end----*/
-}
+
 
 /*---Kozepso szoveg---*/
 
-.one h3 {
+    img.icon2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 5%;
+        width: 105px;
+        height: 105px;
+    }
 
-}
+    .center h3 {
+        text-align: center;
+        font-size: 140%;
+    }
+
+    .center p {
+        text-align: center;
+        font-size: 100%;
+        padding-bottom: 5%;
+    }
+
+    .center a {
+        font-size: 100%;
+    }
+
+    .orderbtn p {
+        border-radius: 6px;
+        text-align: center;
+        display: inline-block;
+        padding: 7px 25px;
+        font-size: 120%;
+        color: #DFEAEC;
+        margin-bottom: 5%;
+    }
 
 /*----Kozepso szoveg end----*/
+
+
+/*----- Footer responsive start ----*/
+
+footer .one-third-footer {
+    width: 100%;
+    margin: 0;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+}
+
+#footer-third1 h3 {
+    font-size: 150%;
+}
+
+    #footer-third1 p {
+        font-size: 130%;
+    }
+
+    #footer-third1 {
+        min-height: 150px;
+        padding-bottom: 10%;
+        border-bottom: 1px solid #DFEAEC;
+        padding-top: 5%;
+    }
+
+    #footer-third2 {
+        min-height: 150px;
+        border-bottom: 1px solid #DFEAEC;
+        padding-top: 5%;
+    }
+    #footer-third2 h3 {
+        font-size: 150%;
+    }
+
+    #footer-third-last h3 {
+        font-size: 150%;
+    }
+
+    #footer-third-last ul li a {
+        font-size: 120%;
+    }
+
+    #footer-third-last {
+        margin-bottom: 15%;
+        padding-top: 5%;
+    }
+
+
+}
+/*----- Footer responsive end -----*/
 
 
 /*-------Mobile responsive-------*/
@@ -306,17 +527,20 @@ img.icon2 {
 
     #menu-icon {
         display:inline-block;
+        position: absolute;
+
     }
 
     nav ul, nav:active ul {
         display: none;
         position: absolute;
-        z-index: 1000;
-        padding: 6px;
+        z-index: 500;
+        padding: 0;
         background: #1ca29e;
-        right: 6px;
-        top: 50px;
-        width: 20%;
+        right: 10px;
+        top: 110px;
+        width: 50%;
+        font-size: 50%;
     }
 
     nav:hover ul {
@@ -330,12 +554,94 @@ img.icon2 {
         margin: 0;
     }
 
+
+
+    .clearfix {
+        padding: 20%;
+    }
+
+
+    /*----Oszlop screen----*/
+
     .one-third {
-        width: 80%;
+        width: 100%;
+        margin: 0;
+        padding-bottom: 15%;
+    }
+
+
+
+    .one-third h3 {
+        text-align: center;
+        font-size: 120%;
+    }
+
+
+    .one-third p {
+        text-align: justify;
+        font-size: 80%;
+    }
+
+    .icon {
+        margin: 0 auto;
+    }
+
+    img.icon {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 5%;
+        width: 100px;
+        height: 100px;
+    }
+    /*----Oszlop screen end----*/
+
+    /*----- Footer responsive mobile start ----*/
+
+    footer .one-third-footer {
+        width: 100%;
         margin: 0;
     }
 
-    .clearfix {
-        padding: 15%;
+    footer img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #footer-third1 h3 {
+        font-size: 130%;
+    }
+
+    #footer-third1 p {
+        font-size: 110%;
+    }
+
+    #footer-third1 {
+        min-height: 150px;
+        padding-bottom: 10%;
+        border-bottom: 1px solid #DFEAEC;
+        padding-top: 3%;
+    }
+
+    #footer-third2 {
+        min-height: 150px;
+        border-bottom: 1px solid #DFEAEC;
+        padding-top: 3%;
+    }
+    #footer-third2 h3 {
+        font-size: 130%;
+    }
+
+    #footer-third-last h3 {
+        font-size: 130%;
+    }
+
+    #footer-third-last ul li a {
+        font-size: 100%;
+    }
+
+    #footer-third-last {
+        margin-bottom: 10%;
+        padding-top: 3%;
     }
 }

@@ -53,13 +53,13 @@ header {
     color: #ff7759;
 }
 
-.logo {
+#logo {
+    margin: 20px;
     float: left;
-    padding-left: 30px;
-    padding-top: 5px;
-    padding-bottom: 3px;
+    width: 200px;
+    height: 50px;
+    background: url(images/logo.svg) no-repeat center;
     display: block;
-    height: 88px;
 }
 
 nav {
@@ -77,7 +77,7 @@ nav {
 
 nav ul li {
     padding: 0px 0px 10px 30px;
-    font-size: 130%;
+    font-size: 160%;
 }
 
 
@@ -102,12 +102,6 @@ nav ul li {
 .clearfix2 {
     clear: both;
     padding: 2%;
-}
-
-
-.clearfix3 {
-    clear: both;
-    padding: 3%;
 }
 
 /*----Oszlopok----*/
@@ -363,19 +357,7 @@ footer.second {
 
 /*-----Responsive size-----*/
 
-@media only screen and (max-width : 1000px) {
-
-    .logo {
-        display: none;
-
-    }
-
-    .clearfix3 {
-        padding: 10%;
-    }
-}
-
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 640px) {
 
     header {
         position: absolute;
@@ -407,15 +389,6 @@ footer.second {
         margin: 0;
     }
 
-    .logo {
-        float: left;
-        padding-left: 30px;
-        padding-top: 5px;
-        padding-bottom: 3px;
-        display: block;
-        max-width: 100%;
-        max-height: 100%;
-    }
 
 
     .clearfix {
@@ -434,13 +407,13 @@ footer.second {
 
     .one-third h3 {
         text-align: center;
-        font-size: 150%;
+        font-size: 140%;
     }
 
 
     .one-third p {
         text-align: justify;
-        font-size: 120%;
+        font-size: 100%;
     }
 
     .icon {
@@ -471,17 +444,17 @@ footer.second {
 
     .center h3 {
         text-align: center;
-        font-size: 150%;
+        font-size: 140%;
     }
 
     .center p {
         text-align: center;
-        font-size: 120%;
+        font-size: 100%;
         padding-bottom: 5%;
     }
 
     .center a {
-        font-size: 110%;
+        font-size: 100%;
     }
 
     .orderbtn p {
@@ -489,7 +462,7 @@ footer.second {
         text-align: center;
         display: inline-block;
         padding: 7px 25px;
-        font-size: 110%;
+        font-size: 120%;
         color: #DFEAEC;
         margin-bottom: 5%;
     }
@@ -514,7 +487,7 @@ footer img {
 }
 
     #footer-third1 p {
-        font-size: 120%;
+        font-size: 130%;
     }
 
     #footer-third1 {
@@ -595,10 +568,6 @@ footer img {
         padding: 20%;
     }
 
-    .clearfix3 {
-        padding: 20%;
-    }
-
 
     /*----Oszlop screen----*/
 
@@ -612,13 +581,13 @@ footer img {
 
     .one-third h3 {
         text-align: center;
-        font-size: 150%;
+        font-size: 120%;
     }
 
 
     .one-third p {
         text-align: justify;
-        font-size: 120%;
+        font-size: 80%;
     }
 
     .icon {
@@ -648,11 +617,11 @@ footer img {
     }
 
     #footer-third1 h3 {
-        font-size: 150%;
+        font-size: 130%;
     }
 
     #footer-third1 p {
-        font-size: 120%;
+        font-size: 110%;
     }
 
     #footer-third1 {
@@ -668,15 +637,15 @@ footer img {
         padding-top: 3%;
     }
     #footer-third2 h3 {
-        font-size: 150%;
+        font-size: 130%;
     }
 
     #footer-third-last h3 {
-        font-size: 150%;
+        font-size: 130%;
     }
 
     #footer-third-last ul li a {
-        font-size: 120%;
+        font-size: 100%;
     }
 
     #footer-third-last {

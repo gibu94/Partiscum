@@ -11,9 +11,10 @@ body {
     line-height: 190%;
     color: #084a58;
     font-family: 'Ubuntu Condensed', cursive;
+    margin: 0;
 }
 
-/*------ Navbar start -----*/
+/*------------------------------------- Navbar start -----------------------------*/
 
 header {
     background: #1ca29e;
@@ -34,7 +35,7 @@ header {
 }
 
 .navigation li {
-    display: inline-block;
+    display: inline-flex;
     float: left;
     padding: 10px
     color: #DFEAEC;
@@ -81,7 +82,7 @@ nav ul li {
 }
 
 
-/*------ Navbar end -----*/
+/*------------------------------------------- Navbar end ------------------------------*/
 
 
 .inner {
@@ -103,40 +104,126 @@ nav ul li {
     clear: both;
     padding: 2%;
 }
-
-
 .clearfix3 {
     clear: both;
     padding: 3%;
 }
 
-/*----Oszlopok----*/
 
-.one-third {
-    width: 29%;
-    float: left;
-    margin: 2%;
+/*-----------------------------Start Gallery----------------------------*/
+
+#gallerysect {
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding-right: 0%;
 }
 
-.one-third h3 a {
-    text-decoration: none;
+div.gallery {
+    width: 160px;
+    display: inline-flex;
+}
+
+div.gallery:hover {
+    width: 165px;
+    height: 165px;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*--------------------------------------End gallery-------------------------------------------*/
+
+/*------------------------------------------- Felso bekezdes / Upper paragraph ---------------------------*/
+
+#upperparagraph {
+    text-align: center;
+    font-size: 160%;
+    color: #084a58;
+    font-weight: 800;
+}
+
+#upperdescription {
+    text-align: center;
+    margin-top: 1%;
+}
+
+/*------------------------------- Felso bekezdes / Upper paragraph END------------------------*/
+
+/* -------------------------------- Kettes csoport -one-half START ----------------------*/
+
+.one-half {
+    width: 48%;
+    float: left;
+    margin-right: 1%;
+    margin-left: 1%;
+    font-family: 'Ubuntu Condensed', cursive;
+    color: #084a58;
+
+}
+
+.one-half h4 {
+    font-size: 180%;
+    text-align: center;
+    margin-bottom: 3%;
     color: #084a58;
 }
 
-.one-third h3 {
-    text-align: center;
-    font-size: 180%;
-}
-
-.one-third p a {
-    text-decoration: none;
-    color: #ff7759;
-}
-
-.one-third p {
-    text-align: justify;
+.one-half p {
     font-size: 125%;
+    text-align: justify;
+    color: #084a58;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    -ms-text-align-last: center;
 }
+
+.two-half {
+    width: 48%;
+    float: left;
+    font-family: 'Ubuntu Condensed', cursive;
+    color: #084a58;
+    border: 0.5px solid #ff7759;
+}
+
+
+.two-half h4 {
+    font-size: 180%;
+    text-align: center;
+    margin-bottom: 3%;
+    color: #084a58;
+}
+
+.two-half p {
+    font-size: 125%;
+    text-align: justify;
+    color: #084a58;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    -ms-text-align-last: center;
+
+
+}
+
+.uppertwo {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.downtwo {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+}
+/* ---- Ikon ---- */
 
 .icon {
     margin: 0 auto;
@@ -146,20 +233,30 @@ img.icon {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 5%;
+    padding-bottom: 1%;
+}
+
+
+.icon2 {
+    margin: 0 auto;
 }
 
 img.icon2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 3%;
+    padding-bottom: 1%;
 }
 
+/* ---- Ikon ---- */
 
-/*----Oszlopok end----*/
 
 
+
+/* -------------------- Kettes csoport -one-half END -------------------------------*/
+
+
+/*------------------------------ Megrendeles start -------------------------------*/
 
 /*----Kozepso resz----*/
 
@@ -178,10 +275,22 @@ img.icon2 {
     color: #ff7759;
 }
 
+
+
 .center p {
-    text-align: center;
+    text-align: justify;
+    text-align-last: center;
+    -moz-text-align-last: center;
+    -ms-text-align-last: center;
     font-size: 125%;
 }
+
+#textcenter {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
 
 /*------ Megrendelo gomb start ------*/
 
@@ -211,23 +320,61 @@ img.icon2 {
 
 .orderbtn {
     text-align: center;
-    padding-top: 1.5%;
+    padding-top: 2%;
+    color: #DFEAEC;
 }
-
-
-/*------ Megrendelo gomb animation start ------*/
-
-
-/*------ Megrendelo gomb animation end ------*/
-
 /*------ Megrendelo gomb end ------*/
 
 
+/*-------------------------------------- Megrendeles end ------------------------------*/
 
-/*----Kozepso resz end----*/
+
+/*---------Naptar gomb --------*/
+
+.orderbtn2 p {
+    border: 2px solid #1ca29e;
+    background-color: #1ca29e;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 150%;
+    color: #DFEAEC;
+}
+
+.orderbtn2 a {
+    color: #DFEAEC;
+    text-decoration: none;
+}
+
+.orderbtn2 a:hover {
+    color: #ff7759;
+}
+
+.orderbtn2:active {
+    transform: translateY(2px) translateX(1px);
+}
+
+.orderbtn2 {
+    text-align: center;
+    padding-top: 2%;
+    color: #DFEAEC;
+}
 
 
-/*----- Footer start ----*/
+#orderbtntext1 a{
+    color: #DFEAEC;
+}
+
+#orderbtntext2 a{
+    color: #DFEAEC;
+}
+/*--------- Naptar gomb end---------*/
+
+
+
+
+/*-------------------------------------- Footer start -------------------------------*/
 
 footer {
     background: #084a58;
@@ -278,7 +425,7 @@ footer {
 }
 
 #social {
-   text-align: center;
+    text-align: center;
 }
 
 .socialicon {
@@ -357,14 +504,11 @@ footer.second {
     color: #DFEAEC;
 }
 
-/*----- Footer end ----*/
+/*-------------------------------------------------- Footer end ---------------------------------------*/
 
 
-
-/*-----Responsive size-----*/
-
+/*------------------------------------------------Responsive size----------------------------------------*/
 @media only screen and (max-width : 1000px) {
-
     .logo {
         display: none;
 
@@ -402,10 +546,11 @@ footer.second {
 
     nav li {
         text-align: center;
-        width: 100%;
+        width: 50%;
         padding: 15px 0;
         margin: 0;
     }
+
 
     .logo {
         float: left;
@@ -417,34 +562,40 @@ footer.second {
         max-height: 100%;
     }
 
-
     .clearfix {
         padding: 15%;
     }
 
-    /*----Oszlop screen----*/
+    .clearfix3 {
+        padding: 13%;
+    }
 
-    .one-third {
-        width: 100%;
-        margin: 0;
-        padding-bottom: 15%;
+    .clearfix1 {
+        padding: 3%;
     }
 
 
+    /*--------- Body responsive start --------*/
 
-    .one-third h3 {
-        text-align: center;
-        font-size: 150%;
-    }
+#upperparagraph {
+    font-size: 110%;
+    text-align: justify;
+    text-align-last: center;
+    text-align-last: center;
+    -moz-text-align-last: center;
+    -ms-text-align-last: center;
+}
 
 
-    .one-third p {
-        text-align: justify;
-        font-size: 120%;
-    }
+/*----- Ikon start ------*/
 
-    .icon {
-        margin: 0 auto;
+    img.icon2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 5%;
+        width: 80px;
+        height: 80px;
     }
 
     img.icon {
@@ -452,69 +603,112 @@ footer.second {
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 5%;
-        width: 120px;
-        height: 120px;
+        width: 80px;
+        height: 80px;
     }
-    /*----Oszlop screen end----*/
+
+    /*----Ikon end ----*/
+
+    /*----Oszlop screen----*/
+
+    .one-half {
+        width: 100%;
+        margin: 0;
+        padding-bottom: 15%;
+    }
 
 
-/*---Kozepso szoveg---*/
 
-    img.icon2 {
+    .one-half h3 {
+        text-align: center;
+        font-size: 150%;
+    }
+
+    .one-half h4 {
+        text-align: center;
+        font-size: 150%;
+    }
+
+
+    .one-half p {
+        text-align: justify;
+        font-size: 110%;
+    }
+
+
+
+.icon img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5%;
+    width: 80px;
+    height: 80px;
+}
+
+
+
+    img.icon {
         display: block;
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 5%;
-        width: 105px;
-        height: 105px;
+        width: 80px;
+        height: 80px;
     }
+    /*----Oszlop screen end----*/
+
+    /*---------- Center ---------*/
+
+    .center {
+        width: 100%;
+        padding-bottom: 10%;
+    }
+
 
     .center h3 {
         text-align: center;
         font-size: 150%;
     }
 
+
     .center p {
-        text-align: center;
-        font-size: 120%;
-        padding-bottom: 5%;
-    }
-
-    .center a {
+        text-align: justify;
         font-size: 110%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
-    .orderbtn p {
-        border-radius: 6px;
-        text-align: center;
-        display: inline-block;
-        padding: 7px 25px;
-        font-size: 110%;
-        color: #DFEAEC;
-        margin-bottom: 5%;
+    #textcenter {
+        margin-left: 0%;
+        margin-right: 0%;
     }
 
-/*----Kozepso szoveg end----*/
+    /*---------- Center end -------*/
+
+    /*--------- Body responsive end --------*/
 
 
-/*----- Footer responsive start ----*/
 
-footer .one-third-footer {
-    width: 100%;
-    margin: 0;
-}
 
-footer img {
-    width: 30px;
-    height: 30px;
-}
+    /*----- Footer responsive start ----*/
 
-#footer-third1 h3 {
-    font-size: 150%;
-}
+    footer .one-third-footer {
+        width: 100%;
+        margin: 0;
+    }
+
+    footer img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #footer-third1 h3 {
+        font-size: 150%;
+    }
 
     #footer-third1 p {
-        font-size: 120%;
+        font-size: 110%;
     }
 
     #footer-third1 {
@@ -547,12 +741,11 @@ footer img {
         border-left: none;
     }
 
-
 }
 /*----- Footer responsive end -----*/
 
 
-/*-------Mobile responsive-------*/
+/*-----------------------------------------Mobile responsive---------------------------------*/
 
 @media only screen and (max-width : 400px) {
 
@@ -599,42 +792,15 @@ footer img {
         padding: 20%;
     }
 
-
-    /*----Oszlop screen----*/
-
-    .one-third {
-        width: 100%;
-        margin: 0;
-        padding-bottom: 15%;
+    .clearfix1 {
+        padding: 1%;
     }
 
 
-
-    .one-third h3 {
-        text-align: center;
-        font-size: 150%;
+    #textcenter {
+        margin-left: 0%;
+        margin-right: 0%;
     }
-
-
-    .one-third p {
-        text-align: justify;
-        font-size: 120%;
-    }
-
-    .icon {
-        margin: 0 auto;
-    }
-
-    img.icon {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 5%;
-        width: 100px;
-        height: 100px;
-    }
-    /*----Oszlop screen end----*/
-
     /*----- Footer responsive mobile start ----*/
 
     footer .one-third-footer {
@@ -676,7 +842,7 @@ footer img {
     }
 
     #footer-third-last ul li a {
-        font-size: 120%;
+        font-size: 110%;
     }
 
     #footer-third-last {

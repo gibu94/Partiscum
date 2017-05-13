@@ -54,6 +54,10 @@ header {
     color: #ff7759;
 }
 
+.current a {
+    color: #ff7759;
+}
+
 .logo {
     float: left;
     padding-left: 30px;
@@ -109,33 +113,16 @@ nav ul li {
     padding: 3%;
 }
 
-
-/*-----------------------------Start Gallery----------------------------*/
-
-#gallerysect {
-    display: block;
-    align-items: center;
-    text-align: center;
-    padding-right: 0%;
+.clearfix4 {
+    clear: both;
+    padding: 1%;
 }
 
-div.gallery {
-    width: 160px;
-    display: inline-flex;
-}
-
-div.gallery:hover {
-    width: 165px;
-    height: 165px;
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
+.clearfix5 {
+    padding: 1%;
 }
 
 
-/*--------------------------------------End gallery-------------------------------------------*/
 
 /*------------------------------------------- Felso bekezdes / Upper paragraph ---------------------------*/
 
@@ -144,6 +131,8 @@ div.gallery img {
     font-size: 160%;
     color: #084a58;
     font-weight: 800;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 #upperdescription {
@@ -151,7 +140,71 @@ div.gallery img {
     margin-top: 1%;
 }
 
+
+.upperdescription h1 {
+    font-size: 240%;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+
+.upperdescription h3 {
+    font-size: 180%;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.upperdescription h4 {
+    font-size: 160%;
+    text-align: left;
+    padding-bottom: 1.5%;
+}
+
+.upperdescription p {
+    font-size: 130%;
+    text-align: left;
+    padding-bottom: 1.5%;
+}
+
+.copyright h3 {
+    font-size: 180%;
+    text-align: center;
+}
+
+.copyright p {
+    font-size: 130%;
+    text-align: center;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: #ff7759;
+}
+
+.copyright ul {
+    list-style-type: none;
+    text-align: center;
+    font-size: 170%;
+}
+
+.copyright ul li {
+    list-style-type: none;
+    padding-bottom: 1%;
+}
 /*------------------------------- Felso bekezdes / Upper paragraph END------------------------*/
+
+hr {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+
+
 
 /* -------------------------------- Kettes csoport -one-half START ----------------------*/
 
@@ -160,6 +213,13 @@ div.gallery img {
     float: left;
     margin-right: 1%;
     margin-left: 1%;
+    font-family: 'Ubuntu Condensed', cursive;
+    color: #084a58;
+
+}
+
+.one-half h1 {
+    font-size: 200%;
     font-family: 'Ubuntu Condensed', cursive;
     color: #084a58;
 
@@ -174,11 +234,13 @@ div.gallery img {
 
 .one-half p {
     font-size: 125%;
-    text-align: justify;
+    text-align: center;
     color: #084a58;
-    -moz-text-align-last: center;
-    text-align-last: center;
-    -ms-text-align-last: center;
+    }
+
+.one-half a {
+    text-decoration: none;
+    color: #ff7759;
 }
 
 .two-half {
@@ -233,7 +295,7 @@ img.icon {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 1%;
+    padding-bottom: 3%;
 }
 
 
@@ -245,7 +307,7 @@ img.icon2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 1%;
+    padding-bottom: 3%;
 }
 
 /* ---- Ikon ---- */
@@ -541,6 +603,18 @@ footer.second {
         border: 2px solid #084a58;
     }
 
+
+    hr {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        border-style: inset;
+        border-width: 1px;
+    }
+
+
     nav:hover ul {
         display: block;
     }
@@ -575,20 +649,30 @@ footer.second {
         padding: 3%;
     }
 
+    .clearfix4 {
+        padding: 1%;
+    }
+
+    .clearfix5 {
+        padding: 0%;
+    }
+
 
     /*--------- Body responsive start --------*/
 
-#upperparagraph {
-    font-size: 110%;
-    text-align: justify;
-    text-align-last: center;
-    text-align-last: center;
-    -moz-text-align-last: center;
-    -ms-text-align-last: center;
-}
+    #upperparagraph {
+        font-size: 110%;
+        text-align: justify;
+        text-align-last: center;
+        text-align-last: center;
+        -moz-text-align-last: center;
+        -ms-text-align-last: center;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
 
 
-/*----- Ikon start ------*/
+    /*----- Ikon start ------*/
 
     img.icon2 {
         display: block;
@@ -632,20 +716,43 @@ footer.second {
 
 
     .one-half p {
-        text-align: justify;
+        text-align: center;
         font-size: 110%;
     }
 
 
+    .copyright{
+        width: 100%;
+        margin: 0;
+    }
 
-.icon img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 5%;
-    width: 80px;
-    height: 80px;
-}
+
+
+    .copyright h3 {
+        text-align: center;
+        font-size: 150%;
+    }
+
+    .copyright h4 {
+        text-align: center;
+        font-size: 150%;
+    }
+
+
+    .copyright ul {
+        text-align: center;
+        font-size: 110%;
+    }
+
+
+    .icon img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 5%;
+        width: 80px;
+        height: 80px;
+    }
 
 
 
@@ -798,11 +905,53 @@ footer.second {
         padding: 1%;
     }
 
+    .clearfix4 {
+        padding: 1%;
+    }
+
+    .clearfix5 {
+        padding: 0%;
+    }
+
+
+    .copyright{
+        width: 100%;
+        margin: 0;
+    }
+
+
+
+    .copyright h3 {
+        text-align: center;
+        font-size: 130%;
+    }
+
+    .copyright h4 {
+        text-align: center;
+        font-size: 130%;
+    }
+
+
+    .copyright ul {
+        text-align: center;
+        font-size: 110%;
+    }
 
     #textcenter {
         margin-left: 0%;
         margin-right: 0%;
     }
+
+    hr {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        border-style: inset;
+        border-width: 1px;
+    }
+
     /*----- Footer responsive mobile start ----*/
 
     footer .one-third-footer {
@@ -851,4 +1000,10 @@ footer.second {
         margin-bottom: 10%;
         padding-top: 3%;
     }
+    #upperparagraph {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+
 }

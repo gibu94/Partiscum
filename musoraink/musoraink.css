@@ -133,6 +133,20 @@ nav ul li {
     padding-bottom: 3%;
 }
 
+#musoraink {
+    font-size: 300%;
+    text-align: center;
+    padding-bottom: 3%;
+    font-family: 'Ubuntu Condensed', cursive;
+}
+
+#prices {
+    font-size: 260%;
+    text-align: center;
+    padding-bottom: 3%;
+    font-family: 'Ubuntu Condensed', cursive;
+}
+
 /*------------------------------- Felso bekezdes / Upper paragraph END------------------------*/
 
 hr {
@@ -149,27 +163,75 @@ hr {
 /*----------- VIDEOK START --------*/
 
 #sunstruck {
-    padding-top: 2%;
+    display: block;
     margin: 0 auto;
     text-align: center;
-}
+    padding-top: 140px;
+    padding-bottom: 10px;
+ }
 
 #hubble {
-    padding-top: 0%;
+    padding-top: 30px;
+    padding-bottom: 30px;
     margin: 0 auto;
     text-align: center;
 }
 
 
 #solarsystem {
-    padding-top: 9%;
+    padding-bottom: 150px;
+    padding-top: 150px;
     margin: 0 auto;
     text-align: center;
 }
 
 
-#astronaut {
-    padding-top: 5%;
+#childrenacademy {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#incrediblesun {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#cosmiccastaways {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#hotandenergic {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#fromearth {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#backtothemoon {
+    padding-top: 180px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#milkyway {
+    padding-top: 15%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 
@@ -203,6 +265,11 @@ hr {
     -moz-text-align-last: center;
     text-align-last: center;
     -ms-text-align-last: center;
+}
+
+.one-half a {
+    text-decoration: none;
+    color: #ff7759;
 }
 
 .two-half {
@@ -532,14 +599,32 @@ footer.second {
 
 
 /*------------------------------------------------Responsive size----------------------------------------*/
-@media only screen and (max-width : 1000px) {
-    .logo {
-        display: none;
+@media only screen and (max-width : 1200px) {
 
+    .clearfix {
+        padding: 6%;
     }
 
-    .clearfix3 {
-        padding: 10%;
+    #musoraink {
+        font-size: 220%;
+    }
+
+}
+
+
+@media only screen and (max-width : 1000px) {
+       .logo {
+            display: none;
+
+        }
+
+
+        .clearfix {
+            padding: 8%;
+        }
+
+    #musoraink {
+        font-size: 220%;
     }
 }
 
@@ -562,6 +647,7 @@ footer.second {
         right: 20px;
         top: 65px;
         width: 50%;
+        border: 2px solid #084a58;
     }
 
     nav:hover ul {
@@ -587,7 +673,7 @@ footer.second {
     }
 
     .clearfix {
-        padding: 15%;
+        padding: 10%;
     }
 
     .clearfix3 {
@@ -710,6 +796,10 @@ footer.second {
         margin-right: 0%;
     }
 
+    #musoraink {
+        font-size: 220%;
+    }
+
     /*---------- Center end -------*/
 
     /*--------- Body responsive end --------*/
@@ -771,7 +861,23 @@ footer.second {
 /*----- Footer responsive end -----*/
 
 
+
+
+
 /*-----------------------------------------Mobile responsive---------------------------------*/
+
+
+@media only screen and (max-width : 620px) {
+
+    .clearfix {
+        padding: 15%;
+    }
+
+    #musoraink {
+        font-size: 220%;
+    }
+
+}
 
 @media only screen and (max-width : 400px) {
 
@@ -792,9 +898,10 @@ footer.second {
         padding: 0;
         background: #1ca29e;
         right: 10px;
-        top: 110px;
+        top: 60px;
         width: 50%;
         font-size: 50%;
+        border: 2px solid #084a58;
     }
 
     nav:hover ul {
@@ -820,6 +927,10 @@ footer.second {
 
     .clearfix1 {
         padding: 1%;
+    }
+
+    #musoraink {
+        font-size: 220%;
     }
 
 

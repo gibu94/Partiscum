@@ -10,7 +10,7 @@ body {
     background-color: #dafffe;
     line-height: 190%;
     color: #084a58;
-    font-family: 'Ubuntu Condensed', cursive;
+    font-family: 'Ubuntu Condensed', sans-serif;
 }
 
 /*------ Navbar start -----*/
@@ -65,7 +65,7 @@ header {
 nav {
     float: right;
     padding: 35px 35px 0 0;
-    font-family: 'Ubuntu Condensed', cursive;
+    font-family: 'Ubuntu Condensed', sans-serif;
 }
 
 #menu-icon {
@@ -135,8 +135,13 @@ nav ul li {
 
 .one-third p {
     text-align: justify;
+    text-align-last: center;
+    -moz-text-align-last: center;
+    -ms-text-align-last: center;
     font-size: 125%;
 }
+
+
 
 .icon {
     margin: 0 auto;
@@ -248,7 +253,7 @@ footer {
 
 .one-third-footer h3 {
     color: #DFEAEC;
-    font-family: 'Ubuntu Condensed', cursive;
+    font-family: 'Ubuntu Condensed', sans-serif;
     text-transform: none;
     text-align: center;
     font-size: 160%;
@@ -256,7 +261,7 @@ footer {
 
 .one-third-footer h5 {
     color: #DFEAEC;
-    font-family: 'Ubuntu Condensed', cursive;
+    font-family: 'Ubuntu Condensed', sans-serif;
     text-transform: none;
     text-align: center;
     font-size: 140%;
@@ -266,7 +271,7 @@ footer {
 .one-third-footer p {
     color: #DFEAEC;
     text-align: center;
-    font-family: 'Ubuntu Condensed', cursive;
+    font-family: 'Ubuntu Condensed', sans-serif;
     text-transform: none;
     font-size: 120%;
 }
@@ -443,6 +448,8 @@ footer.second {
         text-align: justify;
         font-size: 120%;
     }
+
+
 
     .icon {
         margin: 0 auto;

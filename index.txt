@@ -1,0 +1,878 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Partiscum Csillagászati Egyesület</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+    <link rel="stylesheet" href="index.css">
+
+    <style media="screen" type="text/css">
+
+        @import url('https://fonts.googleapis.com/css?family=Bevan|Ubuntu+Condensed|Unica+One');
+
+        * {
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #dafffe;
+            line-height: 190%;
+            color: #084a58;
+            font-family: 'Ubuntu Condensed', cursive;
+        }
+
+        /*------ Navbar start -----*/
+
+        header {
+            background: #1ca29e;
+            width: 100%;
+            height: 100px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            border-bottom: 5px solid #1ca29e;
+            opacity: .9;
+        }
+
+        .navigation ul {
+            list-style: none;
+            color: #DFEAEC;
+            font-weight: 700;
+        }
+
+        .navigation li {
+            display: inline-block;
+            float: left;
+            padding: 10px
+            color: #DFEAEC;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #DFEAEC;
+        }
+
+        .navigation a:hover {
+            color: #ff7759;
+        }
+
+        #current {
+            color: #ff7759;
+        }
+
+        .logo {
+            float: left;
+            padding-left: 30px;
+            padding-top: 5px;
+            padding-bottom: 3px;
+            display: block;
+            height: 88px;
+        }
+
+        nav {
+            float: right;
+            padding: 35px 35px 0 0;
+            font-family: 'Ubuntu Condensed', cursive;
+        }
+
+        #menu-icon {
+            background: url(../img/icon.png) no-repeat center;
+            display: hidden;
+            width: 32px;
+            height: 32px;
+        }
+
+        nav ul li {
+            padding: 0px 0px 10px 30px;
+            font-size: 130%;
+        }
+
+
+        /*------ Navbar end -----*/
+
+
+        .inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .clearfix {
+            clear: both;
+            padding: 5%;
+        }
+
+        .clearfix1 {
+            clear: both;
+            padding: 1%;
+        }
+
+        .clearfix2 {
+            clear: both;
+            padding: 2%;
+        }
+
+
+        .clearfix3 {
+            clear: both;
+            padding: 3%;
+        }
+
+        /*----Oszlopok----*/
+
+        .one-third {
+            width: 29%;
+            float: left;
+            margin: 2%;
+        }
+
+        .one-third h3 a {
+            text-decoration: none;
+            color: #084a58;
+        }
+
+        .one-third h3 {
+            text-align: center;
+            font-size: 180%;
+        }
+
+        .one-third p a {
+            text-decoration: none;
+            color: #ff7759;
+        }
+
+        .one-third p {
+            text-align: justify;
+            text-align-last: center;
+            -moz-text-align-last: center;
+            -ms-text-align-last: center;
+            font-size: 125%;
+        }
+
+
+
+        .icon {
+            margin: 0 auto;
+        }
+
+        img.icon {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 5%;
+        }
+
+        img.icon2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 3%;
+        }
+
+
+        /*----Oszlopok end----*/
+
+
+
+        /*----Kozepso resz----*/
+
+        .center h3 {
+            text-align: center;
+            font-size: 180%;
+        }
+
+        .center h3 a {
+            text-decoration: none;
+            color: #084a58;
+        }
+
+        .center p a {
+            text-decoration: none;
+            color: #ff7759;
+        }
+
+        .center p {
+            text-align: center;
+            font-size: 125%;
+        }
+
+        /*------ Megrendelo gomb start ------*/
+
+        .orderbtn p {
+            border: 2px solid #1ca29e;
+            background-color: #1ca29e;
+            border-radius: 10px;
+            text-align: center;
+            display: inline-block;
+            padding: 15px 45px;
+            font-size: 150%;
+            color: #DFEAEC;
+        }
+
+        .orderbtn a {
+            color: #DFEAEC;
+            text-decoration: none;
+        }
+
+        .orderbtn a:hover {
+            color: #ff7759;
+        }
+
+        .orderbtn:active {
+            transform: translateY(2px) translateX(1px);
+        }
+
+        .orderbtn {
+            text-align: center;
+            padding-top: 1.5%;
+        }
+
+
+        /*------ Megrendelo gomb animation start ------*/
+
+
+        /*------ Megrendelo gomb animation end ------*/
+
+        /*------ Megrendelo gomb end ------*/
+
+
+
+        /*----Kozepso resz end----*/
+
+
+        /*----- Footer start ----*/
+
+        footer {
+            background: #084a58;
+            overflow: hidden;
+            opacity: .9;
+        }
+
+        #footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .one-third-footer {
+            width: 29%;
+            float: left;
+            margin: 2%;
+        }
+
+        .one-third-footer h3 {
+            color: #DFEAEC;
+            font-family: 'Ubuntu Condensed', cursive;
+            text-transform: none;
+            text-align: center;
+            font-size: 160%;
+        }
+
+        .one-third-footer h5 {
+            color: #DFEAEC;
+            font-family: 'Ubuntu Condensed', cursive;
+            text-transform: none;
+            text-align: center;
+            font-size: 140%;
+        }
+
+
+        .one-third-footer p {
+            color: #DFEAEC;
+            text-align: center;
+            font-family: 'Ubuntu Condensed', cursive;
+            text-transform: none;
+            font-size: 120%;
+        }
+
+        .one-third-footer a {
+            text-decoration: none;
+            color: #DFEAEC;
+            font-size: 100%;
+        }
+
+        #social {
+            text-align: center;
+        }
+
+        .socialicon {
+            display: inline-block;
+            padding-left: auto;
+            padding-right: auto;
+            margin: 5%;
+        }
+
+        footer .current {
+            color: #ff7759;
+        }
+
+        footer a:hover {
+            color: #ff7759;
+        }
+
+
+        #footer-third-last ul {
+            text-align: center;
+            margin-bottom: 1%;
+        }
+
+        #menulist {
+            display: inline-flex;
+            text-align: center;
+        }
+
+        #menulist ul {
+            margin-right: 10%;
+        }
+
+        #footer-third-last {
+            text-align: center;
+        }
+
+        #footer-third1 {
+            border-right: 1px solid #DFEAEC;
+            max-height: 150px;
+            min-height: 150px;
+        }
+
+        #footer-third2 {
+
+            max-height: 150px;
+            min-height: 150px;
+        }
+
+        #footer-third-last {
+            border-left: 1px solid #DFEAEC;
+            max-height: 150px;
+            min-height: 150px;
+        }
+
+        #footer-third-last h3 {
+            padding-bottom: 1%;
+        }
+
+        footer.second {
+            border-top: 1px solid #DFEAEC;
+            max-height: 100px;
+            padding-bottom: 1%;
+            color: #084a58;
+            text-align: center;
+        }
+
+        .second p {
+            text-align: center;
+            font-size: 100%;
+            color: #DFEAEC;
+            padding-top: 1%;
+        }
+
+        .second a {
+            text-decoration: none;
+            color: #DFEAEC;
+        }
+
+        /*----- Footer end ----*/
+
+
+
+        /*-----Responsive size-----*/
+
+        @media only screen and (max-width : 1000px) {
+
+            .logo {
+                display: none;
+
+            }
+
+            .clearfix3 {
+                padding: 10%;
+            }
+        }
+
+        @media only screen and (max-width : 768px) {
+
+            header {
+                position: absolute;
+            }
+
+            #menu-icon {
+                display:inline-block;
+            }
+
+            nav ul, nav:active ul {
+                display: none;
+                position: absolute;
+                z-index: 1000;
+                padding: 20px;
+                background: #1ca29e;
+                right: 20px;
+                top: 65px;
+                width: 50%;
+                border: 2px solid #084a58;
+            }
+
+            nav:hover ul {
+                display: block;
+            }
+
+            nav li {
+                text-align: center;
+                width: 100%;
+                padding: 15px 0;
+                margin: 0;
+            }
+
+            .logo {
+                float: left;
+                padding-left: 30px;
+                padding-top: 5px;
+                padding-bottom: 3px;
+                display: block;
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+
+            .clearfix {
+                padding: 15%;
+            }
+
+            /*----Oszlop screen----*/
+
+            .one-third {
+                width: 100%;
+                margin: 0;
+                padding-bottom: 15%;
+            }
+
+
+
+            .one-third h3 {
+                text-align: center;
+                font-size: 150%;
+            }
+
+
+            .one-third p {
+                text-align: justify;
+                font-size: 120%;
+            }
+
+
+
+            .icon {
+                margin: 0 auto;
+            }
+
+            img.icon {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                padding-bottom: 5%;
+                width: 120px;
+                height: 120px;
+            }
+            /*----Oszlop screen end----*/
+
+
+            /*---Kozepso szoveg---*/
+
+            img.icon2 {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                padding-bottom: 5%;
+                width: 105px;
+                height: 105px;
+            }
+
+            .center h3 {
+                text-align: center;
+                font-size: 150%;
+            }
+
+            .center p {
+                text-align: center;
+                font-size: 120%;
+                padding-bottom: 5%;
+            }
+
+            .center a {
+                font-size: 110%;
+            }
+
+            .orderbtn p {
+                border-radius: 6px;
+                text-align: center;
+                display: inline-block;
+                padding: 7px 25px;
+                font-size: 110%;
+                color: #DFEAEC;
+                margin-bottom: 5%;
+            }
+
+            /*----Kozepso szoveg end----*/
+
+
+            /*----- Footer responsive start ----*/
+
+            footer .one-third-footer {
+                width: 100%;
+                margin: 0;
+            }
+
+            footer img {
+                width: 30px;
+                height: 30px;
+            }
+
+            #footer-third1 h3 {
+                font-size: 150%;
+            }
+
+            #footer-third1 p {
+                font-size: 120%;
+            }
+
+            #footer-third1 {
+                min-height: 150px;
+                padding-bottom: 10%;
+                border-bottom: 1px solid #DFEAEC;
+                padding-top: 5%;
+            }
+
+            #footer-third2 {
+                min-height: 150px;
+                border-bottom: 1px solid #DFEAEC;
+                padding-top: 5%;
+            }
+            #footer-third2 h3 {
+                font-size: 150%;
+            }
+
+            #footer-third-last h3 {
+                font-size: 150%;
+            }
+
+            #footer-third-last ul li a {
+                font-size: 120%;
+            }
+
+            #footer-third-last {
+                margin-bottom: 15%;
+                padding-top: 5%;
+                border-left: none;
+            }
+
+
+        }
+        /*----- Footer responsive end -----*/
+
+
+        /*-------Mobile responsive-------*/
+
+        @media only screen and (max-width : 400px) {
+
+            header {
+                position: absolute;
+            }
+
+            #menu-icon {
+                display:inline-block;
+                position: absolute;
+
+            }
+
+            nav ul, nav:active ul {
+                display: none;
+                position: absolute;
+                z-index: 500;
+                padding: 0;
+                background: #1ca29e;
+                right: 10px;
+                top: 60px;
+                width: 50%;
+                font-size: 50%;
+                border: 2px solid #084a58;
+            }
+
+            nav:hover ul {
+                display: block;
+            }
+
+            nav li {
+                text-align: center;
+                width: 70%;
+                padding: 8px 0;
+                margin: 0;
+            }
+
+
+
+            .clearfix {
+                padding: 20%;
+            }
+
+            .clearfix3 {
+                padding: 20%;
+            }
+
+
+            /*----Oszlop screen----*/
+
+            .one-third {
+                width: 100%;
+                margin: 0;
+                padding-bottom: 15%;
+            }
+
+
+
+            .one-third h3 {
+                text-align: center;
+                font-size: 150%;
+            }
+
+
+            .one-third p {
+                text-align: justify;
+                font-size: 120%;
+            }
+
+            .icon {
+                margin: 0 auto;
+            }
+
+            img.icon {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                padding-bottom: 5%;
+                width: 100px;
+                height: 100px;
+            }
+            /*----Oszlop screen end----*/
+
+            /*----- Footer responsive mobile start ----*/
+
+            footer .one-third-footer {
+                width: 100%;
+                margin: 0;
+            }
+
+            footer img {
+                width: 30px;
+                height: 30px;
+            }
+
+            #footer-third1 h3 {
+                font-size: 150%;
+            }
+
+            #footer-third1 p {
+                font-size: 120%;
+            }
+
+            #footer-third1 {
+                min-height: 150px;
+                padding-bottom: 10%;
+                border-bottom: 1px solid #DFEAEC;
+                padding-top: 3%;
+            }
+
+            #footer-third2 {
+                min-height: 150px;
+                border-bottom: 1px solid #DFEAEC;
+                padding-top: 3%;
+            }
+            #footer-third2 h3 {
+                font-size: 150%;
+            }
+
+            #footer-third-last h3 {
+                font-size: 150%;
+            }
+
+            #footer-third-last ul li a {
+                font-size: 120%;
+            }
+
+            #footer-third-last {
+                margin-bottom: 10%;
+                padding-top: 3%;
+            }
+        }
+
+    </style>
+
+
+    <header>
+        <a href="../index/index.html"><img src="../Images/logo.png" alt="Logó" class="logo"/></a>
+        <nav class="navigation">
+            <a href="#" id="menu-icon"></a>
+            <ul>
+                <li><a href="../index/index.html" id="current">Főoldal</a></li>
+                <li><a href="../mobilplanetarium/mobilplanetarium.html">Mobilplanetárium</a></li>
+                <li><a href="../musoraink/musoraink.html">Műsoraink</a></li>
+                <li><a href="../araink/araink.html">Áraink</a></li>
+                <li><a href="../egyesuletunk/egyesuletunk.html">Egyesületünk</a></li>
+                <li><a href="../kapcsolat/kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+</head>
+
+<!----Navigation and header end---->
+
+<body>
+
+<div class="clearfix3"></div>
+
+<div class="inner">
+
+    <!---Baloldal--->
+    <section class="one-third">
+        <div class="icon">
+            <td><a href="../mobilplanetarium/mobilplanetarium.html"><img src="../icon/png/tent.png"
+                                                                         alt="A planetáriumról" width="150px"
+                                                                         height="150px" class="icon"/></a></td>
+        </div>
+        <h3><a href="../mobilplanetarium/mobilplanetarium.html">A planetáriumról</a></h3>
+        <br>
+        <p id="textlastcenter1">A Partiscum Planetáriumot 2013 óta működteti a Partiscum Csillagászati Egyesület. Jelenlegi, 8 méter átmérőjű
+            kupolánk már a harmadik és a jövőben tervezzük egy kisebb méretű mobilplanetárium beszerzését is. Saját
+            gyártású, illetve vásárolt teljes kupolás filmeket láthat a közönségünk, minden esetben magyar narrációval.
+            Az óvodáskortól a felnőtt korosztályig, mindenki számára rendelkezünk megfelelő filmmel. A fedett helyen
+            felállítható kupola egy előadását egyszerre 60 fő is megtekintheti.</p>
+    </section>
+    <!---Baloldal end--->
+
+    <!---Kozep--->
+    <section class="one-third">
+        <div class="icon">
+            <td><a href="../terkep/terkep.html"><img src="../icon/png/map.png" alt="Ahol már voltunk" width="150px"
+                                                     height="150px" class="icon"/></a></td>
+        </div>
+        <h3><a href="../terkep/terkep.html">Ahol már voltunk</a></h3>
+        <br>
+        <p id="textlastcenter2">A Partiscum Planetárium 2013 óta több, mint <b>360 intézményben</b> járt már és ez alatt nem kevesebb, mint
+            <b>120 ezer gyermek</b> tekinthette meg előadásainkat. Célunk, hogy a legkisebb falvaktól a nagyvárosokig,
+            minden gyermekhez és érdeklődőhöz elvihessük a csillagászat élményét anélkül, hogy ehhez el kelljen utazniuk
+            vagy a tanórák rendjéből ki kellene szakadniuk. <b><a href="../terkep/terkep.html">Itt megtekintheti</a></b>, hogy hol járt már
+            mobilplanetáriumunk.</p>
+    </section>
+    <!---Kozep end--->
+
+    <!---Jobboldal--->
+    <section class="one-third">
+        <div class="icon">
+            <td><a href="../calendar/calendar.html"><img src="../icon/png/calendar.png" alt="Szabad időpontok"
+                                                         width="150px" height="150px" class="icon"/></a></td>
+        </div>
+        <h3><a href="../calendar/calendar.html">Szabad időpontok</a></h3>
+        <br>
+        <p id="textlastcenter3">Foglaltsági táblázatunk sokszor változik. Ahhoz, hogy az Önök elképzeléseinek megfelelő időpontot tudjunk
+            találni, fontos, hogy kiválasszanak egy még szabad időpontot, legyen szó akár egy iskolai jeles napról
+            (diáknap, évforduló... stb.) vagy egy többivel szemben preferált napról. Szabad, még rendelhető
+            előadásnapokhoz a megrendelés előtt kérjük minden esetben tekintse meg foglaltsági naptárunkat, amelyet
+            <b><a href="../calendar/calendar.html">ide kattintva</a></b> érhet el!</p>
+    </section>
+    <!---Jobboldal end--->
+
+    <div class="clearfix1"></div>
+    <!----Kozepso resz--->
+
+    <section class="center">
+        <div class="icon2">
+            <td><a href="../megrendeles/megrendeles.html"><img src="../icon/png/checklist.png"
+                                                               alt="Előadás megrendelése" width="150px" height="150px"
+                                                               class="icon2"/></a></td>
+        </div>
+        <div class="center">
+            <h3><a href="../megrendeles/megrendeles.html">Ajánlatkérés, előadások megrendelése</a></h3>
+            <br>
+            <p>Előadásaink megrendeléséhez és ajánlatkéréshez kérjük használják az alábbi gombra kattintva elérhető
+                megrendelő űrlapunkat!
+                <br>Az időpont kiválasztása előtt kérjük <i>ellenőrizzék</i> foglaltsági naptárunkat a <b><a
+                        href="../calendar/calendar.html">"Szabad időpontok"</a></b> menüpont alatt, hogy elérhető-e még
+                a választott nap!</p>
+        </div>
+    </section>
+
+    <!---Megrendelo gomb start--->
+
+    <section class="orderbtn">
+        <div class="orderbtn">
+            <p><b><a href="../megrendeles/megrendeles.html">Megrendelés</a></b></p>
+        </div>
+    </section>
+
+
+    <!---Megrendelo gomb end--->
+
+    <div class="clearfix2"></div>
+    <!------------- Naptar start -------------->
+
+
+
+    <!------------- Naptar end ---------------->
+
+    <!----Kozepso resz end--->
+
+
+</div>
+<!----End of body---->
+<div class="clearfix2"></div>
+
+<footer>
+
+    <div id="footer-inner">
+        <section class="one-third-footer" id="footer-third1">
+            <h3>Elérhetőségek</h3><br>
+            <p class="phone">30/383-03-74</p>
+            <p class="email">mobilplanetarium@gmail.com</p>
+            <p class="email2">pacsi.szeged@gmail.com</p>
+        </section>
+
+        <section class="one-third-footer" id="footer-third2">
+            <h3>Közösségi oldalaink</h3>
+            <br>
+            <div id="social">
+                <a href="https://www.facebook.com/csillagasz/?ref=br_rs" target="_blank"><img
+                        src="../icon/png/facebook.png" alt="Facebook" width="48px" height="48px"
+                        class="socialicon"/></a>
+                <a href="https://www.youtube.com/user/itbooks/featured" target="_blank"><img
+                        src="../icon/png/youtube.png" alt="YouTube" width="50px" height="50px" class="socialicon"/></a>
+            </div>
+        </section>
+
+        <section class="one-third-footer" id="footer-third-last">
+            <h3>Menüpontok</h3>
+            <br>
+            <div id="menulist">
+                <ul>
+                    <li><a href="../index/index.html" class="current">Főoldal</a></li>
+                    <li><a href="../mobilplanetarium/mobilplanetarium.html">Mobilplanetárium</a></li>
+                    <li><a href="../musoraink/musoraink.html">Műsoraink</a></li>
+                </ul>
+                <ul>
+                    <li><a href="../araink/araink.html">Áraink</a></li>
+                    <li><a href="../egyesuletunk/egyesuletunk.html">Egyesületünk</a></li>
+                    <li><a href="../kapcsolat/kapcsolat.html">Kapcsolat</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+</footer>
+
+<footer class="second">
+    <p>&copy; RIRG Design &amp; Photo, 2017.<br>
+        <a href="../termsandconditions/termsandconditions.html">Felhasználási feltételek, szerzői jogok // Copyrights,
+            terms and conditions</a></p>
+</footer>
+
+</body>
+
+</html>

@@ -10,7 +10,7 @@ body {
     background-color: #dafffe;
     line-height: 190%;
     color: #084a58;
-    font-family: 'Ubuntu Condensed', sans-serif;
+    font-family: 'Ubuntu Condensed', cursive;
     margin: 0;
 }
 
@@ -54,10 +54,6 @@ header {
     color: #ff7759;
 }
 
-.current a {
-    color: #ff7759;
-}
-
 .logo {
     float: left;
     padding-left: 30px;
@@ -70,7 +66,7 @@ header {
 nav {
     float: right;
     padding: 35px 35px 0 0;
-    font-family: 'Ubuntu Condensed', sans-serif;
+    font-family: 'Ubuntu Condensed', cursive;
 }
 
 #menu-icon {
@@ -110,19 +106,22 @@ nav ul li {
 }
 .clearfix3 {
     clear: both;
-    padding: 3%;
-}
-
-.clearfix4 {
-    clear: both;
-    padding: 4%;
-}
-
-.clearfix5 {
-    padding: 1%;
+    padding: 2%;
 }
 
 
+/*------- Megrendelo start ------*/
+
+iframe {
+    height: 500px;
+    margin: 0 auto;
+    display: block;
+}
+
+/*------- Megrendelo end --------*/
+
+
+/*--------------------------------------End gallery-------------------------------------------*/
 
 /*------------------------------------------- Felso bekezdes / Upper paragraph ---------------------------*/
 
@@ -131,8 +130,6 @@ nav ul li {
     font-size: 160%;
     color: #084a58;
     font-weight: 800;
-    margin-left: 15%;
-    margin-right: 15%;
 }
 
 #upperdescription {
@@ -140,71 +137,7 @@ nav ul li {
     margin-top: 1%;
 }
 
-
-.upperdescription h1 {
-    font-size: 240%;
-    text-align: center;
-    padding-bottom: 2%;
-}
-
-
-.upperdescription h3 {
-    font-size: 180%;
-    text-align: center;
-    padding-bottom: 3%;
-}
-
-.upperdescription h4 {
-    font-size: 160%;
-    text-align: left;
-    padding-bottom: 1.5%;
-}
-
-.upperdescription p {
-    font-size: 130%;
-    text-align: left;
-    padding-bottom: 1.5%;
-}
-
-.copyright h3 {
-    font-size: 180%;
-    text-align: center;
-}
-
-.copyright p {
-    font-size: 130%;
-    text-align: center;
-}
-
-.copyright a {
-    text-decoration: none;
-    color: #ff7759;
-}
-
-.copyright ul {
-    list-style-type: none;
-    text-align: center;
-    font-size: 170%;
-}
-
-.copyright ul li {
-    list-style-type: none;
-    padding-bottom: 1%;
-}
 /*------------------------------- Felso bekezdes / Upper paragraph END------------------------*/
-
-hr {
-    display: block;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
-}
-
-
-
 
 /* -------------------------------- Kettes csoport -one-half START ----------------------*/
 
@@ -213,14 +146,7 @@ hr {
     float: left;
     margin-right: 1%;
     margin-left: 1%;
-    font-family: 'Ubuntu Condensed', sans-serif;
-    color: #084a58;
-
-}
-
-.one-half h1 {
-    font-size: 200%;
-    font-family: 'Ubuntu Condensed', sans-serif;
+    font-family: 'Ubuntu Condensed', cursive;
     color: #084a58;
 
 }
@@ -234,19 +160,17 @@ hr {
 
 .one-half p {
     font-size: 125%;
-    text-align: center;
+    text-align: justify;
     color: #084a58;
-}
-
-.one-half a {
-    text-decoration: none;
-    color: #ff7759;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    -ms-text-align-last: center;
 }
 
 .two-half {
     width: 48%;
     float: left;
-    font-family: 'Ubuntu Condensed', sans-serif;
+    font-family: 'Ubuntu Condensed', cursive;
     color: #084a58;
     border: 0.5px solid #ff7759;
 }
@@ -285,10 +209,6 @@ hr {
     padding-left: auto;
     padding-right: auto;
 }
-
-.logo4 {
-    margin-bottom: 2%;
-}
 /* ---- Ikon ---- */
 
 .icon {
@@ -299,7 +219,7 @@ img.icon {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 3%;
+    padding-bottom: 1%;
 }
 
 
@@ -311,7 +231,7 @@ img.icon2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 3%;
+    padding-bottom: 1%;
 }
 
 /* ---- Ikon ---- */
@@ -322,13 +242,12 @@ img.icon2 {
 /* -------------------- Kettes csoport -one-half END -------------------------------*/
 
 
-/*------------------------------ Megrendeles start -------------------------------*/
+/*------------------------------ Idopont start -------------------------------*/
 
 /*----Kozepso resz----*/
-
 .center h3 {
     text-align: center;
-    font-size: 180%;
+    font-size: 240%;
 }
 
 .center h3 a {
@@ -341,22 +260,10 @@ img.icon2 {
     color: #ff7759;
 }
 
-
-
 .center p {
-    text-align: justify;
-    text-align-last: center;
-    -moz-text-align-last: center;
-    -ms-text-align-last: center;
+    text-align: center;
     font-size: 125%;
 }
-
-#textcenter {
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-
 
 /*------ Megrendelo gomb start ------*/
 
@@ -386,56 +293,22 @@ img.icon2 {
 
 .orderbtn {
     text-align: center;
-    padding-top: 2%;
-    color: #DFEAEC;
-}
-/*------ Megrendelo gomb end ------*/
-
-
-/*-------------------------------------- Megrendeles end ------------------------------*/
-
-
-/*---------Naptar gomb --------*/
-
-.orderbtn2 p {
-    border: 2px solid #1ca29e;
-    background-color: #1ca29e;
-    border-radius: 10px;
-    text-align: center;
-    display: inline-block;
-    padding: 15px 35px;
-    font-size: 150%;
-    color: #DFEAEC;
-}
-
-.orderbtn2 a {
-    color: #DFEAEC;
-    text-decoration: none;
-}
-
-.orderbtn2 a:hover {
-    color: #ff7759;
-}
-
-.orderbtn2:active {
-    transform: translateY(2px) translateX(1px);
-}
-
-.orderbtn2 {
-    text-align: center;
-    padding-top: 2%;
-    color: #DFEAEC;
+    padding-top: 1.5%;
 }
 
 
-#orderbtntext1 a{
-    color: #DFEAEC;
+
+
+#textcenter {
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
-#orderbtntext2 a{
-    color: #DFEAEC;
-}
-/*--------- Naptar gomb end---------*/
+
+
+
+
+/*-------------------------------------- Idopont end ------------------------------*/
 
 
 
@@ -461,7 +334,7 @@ footer {
 
 .one-third-footer h3 {
     color: #DFEAEC;
-    font-family: 'Ubuntu Condensed', sans-serif;
+    font-family: 'Ubuntu Condensed', cursive;
     text-transform: none;
     text-align: center;
     font-size: 160%;
@@ -469,7 +342,7 @@ footer {
 
 .one-third-footer h5 {
     color: #DFEAEC;
-    font-family: 'Ubuntu Condensed', sans-serif;
+    font-family: 'Ubuntu Condensed', cursive;
     text-transform: none;
     text-align: center;
     font-size: 140%;
@@ -479,7 +352,7 @@ footer {
 .one-third-footer p {
     color: #DFEAEC;
     text-align: center;
-    font-family: 'Ubuntu Condensed', sans-serif;
+    font-family: 'Ubuntu Condensed', cursive;
     text-transform: none;
     font-size: 120%;
 }
@@ -574,15 +447,6 @@ footer.second {
 
 
 /*------------------------------------------------Responsive size----------------------------------------*/
-
-@media only screen and (max-width : 1200px) {
-
-    .clearfix {
-        padding: 6%;
-    }
-
-}
-
 @media only screen and (max-width : 1000px) {
     .logo {
         display: none;
@@ -590,12 +454,7 @@ footer.second {
     }
 
     .clearfix3 {
-        padding: 1%;
-    }
-
-
-    .clearfix {
-        padding: 7%;
+        padding: 10%;
     }
 }
 
@@ -621,18 +480,6 @@ footer.second {
         border: 2px solid #084a58;
     }
 
-
-    hr {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0;
-        margin-bottom: 0;
-        border-style: inset;
-        border-width: 1px;
-    }
-
-
     nav:hover ul {
         display: block;
     }
@@ -655,32 +502,25 @@ footer.second {
         max-height: 100%;
     }
 
-    .logo4 {
-        max-width: 100%;
-        max-height: 100%;
-        margin-bottom: 0;
-    }
-
     .clearfix {
-        padding: 13%;
+        padding: 15%;
     }
 
     .clearfix3 {
-        padding: 1%;
+        padding: 5%;
     }
 
     .clearfix1 {
         padding: 3%;
     }
 
-    .clearfix4 {
+    .clearfix2 {
         padding: 1%;
     }
 
-    .clearfix5 {
-        padding: 0%;
+    iframe {
+        height: 700px;
     }
-
 
     /*--------- Body responsive start --------*/
 
@@ -691,10 +531,21 @@ footer.second {
         text-align-last: center;
         -moz-text-align-last: center;
         -ms-text-align-last: center;
-        margin-left: 0%;
-        margin-right: 0%;
     }
 
+    #textcenter {
+        text-align: justify;
+        text-align-last: center;
+        -ms-text-align-last: center;
+        -moz-text-align-last: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 0;
+    }
+
+    .orderbtn {
+        padding-top: 0;
+    }
 
     /*----- Ikon start ------*/
 
@@ -740,33 +591,10 @@ footer.second {
 
 
     .one-half p {
-        text-align: center;
+        text-align: justify;
         font-size: 110%;
     }
 
-
-    .copyright{
-        width: 100%;
-        margin: 0;
-    }
-
-
-
-    .copyright h3 {
-        text-align: center;
-        font-size: 150%;
-    }
-
-    .copyright h4 {
-        text-align: center;
-        font-size: 150%;
-    }
-
-
-    .copyright ul {
-        text-align: center;
-        font-size: 110%;
-    }
 
 
     .icon img {
@@ -794,7 +622,7 @@ footer.second {
 
     .center {
         width: 100%;
-        padding-bottom: 10%;
+        padding-bottom: 2%;
     }
 
 
@@ -807,13 +635,11 @@ footer.second {
     .center p {
         text-align: justify;
         font-size: 110%;
-        margin-left: 0;
-        margin-right: 0;
-    }
+            }
 
     #textcenter {
-        margin-left: 0%;
-        margin-right: 0%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     /*---------- Center end -------*/
@@ -922,66 +748,27 @@ footer.second {
     }
 
     .clearfix3 {
-        padding: 20%;
+        padding: 10%;
     }
 
     .clearfix1 {
         padding: 1%;
     }
 
-    .clearfix4 {
-        padding: 1%;
+    .clearfix2 {
+        padding: 0.5%;
     }
 
-    .clearfix5 {
-        padding: 0%;
-    }
-
-
-    .copyright{
+    iframe {
+        height: 600px;
         width: 100%;
-        margin: 0;
     }
 
-
-
-    .copyright h3 {
-        text-align: center;
-        font-size: 130%;
-    }
-
-    .copyright h4 {
-        text-align: center;
-        font-size: 130%;
-    }
-
-
-    .copyright ul {
-        text-align: center;
-        font-size: 110%;
-    }
 
     #textcenter {
-        margin-left: 0%;
-        margin-right: 0%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
-
-    .logo4 {
-        max-width: 100%;
-        max-height: 100%;
-        margin-bottom: 0;
-    }
-
-    hr {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0;
-        margin-bottom: 0;
-        border-style: inset;
-        border-width: 1px;
-    }
-
     /*----- Footer responsive mobile start ----*/
 
     footer .one-third-footer {
@@ -1030,10 +817,4 @@ footer.second {
         margin-bottom: 10%;
         padding-top: 3%;
     }
-    #upperparagraph {
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-
 }

@@ -54,10 +54,6 @@ header {
     color: #ff7759;
 }
 
-.current a {
-    color: #ff7759;
-}
-
 .logo {
     float: left;
     padding-left: 30px;
@@ -110,19 +106,30 @@ nav ul li {
 }
 .clearfix3 {
     clear: both;
-    padding: 3%;
+    padding: 5%;
 }
 
-.clearfix4 {
-    clear: both;
-    padding: 4%;
+#title {
+    font-size: 240%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    text-align: center;
 }
 
-.clearfix5 {
-    padding: 1%;
+#order{
+    font-size: 180%;
+    padding-bottom: 2%;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    text-align: center;
 }
 
 
+
+iframe {
+    display: block;
+    height: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
 
 /*------------------------------------------- Felso bekezdes / Upper paragraph ---------------------------*/
 
@@ -131,8 +138,6 @@ nav ul li {
     font-size: 160%;
     color: #084a58;
     font-weight: 800;
-    margin-left: 15%;
-    margin-right: 15%;
 }
 
 #upperdescription {
@@ -140,71 +145,7 @@ nav ul li {
     margin-top: 1%;
 }
 
-
-.upperdescription h1 {
-    font-size: 240%;
-    text-align: center;
-    padding-bottom: 2%;
-}
-
-
-.upperdescription h3 {
-    font-size: 180%;
-    text-align: center;
-    padding-bottom: 3%;
-}
-
-.upperdescription h4 {
-    font-size: 160%;
-    text-align: left;
-    padding-bottom: 1.5%;
-}
-
-.upperdescription p {
-    font-size: 130%;
-    text-align: left;
-    padding-bottom: 1.5%;
-}
-
-.copyright h3 {
-    font-size: 180%;
-    text-align: center;
-}
-
-.copyright p {
-    font-size: 130%;
-    text-align: center;
-}
-
-.copyright a {
-    text-decoration: none;
-    color: #ff7759;
-}
-
-.copyright ul {
-    list-style-type: none;
-    text-align: center;
-    font-size: 170%;
-}
-
-.copyright ul li {
-    list-style-type: none;
-    padding-bottom: 1%;
-}
 /*------------------------------- Felso bekezdes / Upper paragraph END------------------------*/
-
-hr {
-    display: block;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
-}
-
-
-
 
 /* -------------------------------- Kettes csoport -one-half START ----------------------*/
 
@@ -213,13 +154,6 @@ hr {
     float: left;
     margin-right: 1%;
     margin-left: 1%;
-    font-family: 'Ubuntu Condensed', sans-serif;
-    color: #084a58;
-
-}
-
-.one-half h1 {
-    font-size: 200%;
     font-family: 'Ubuntu Condensed', sans-serif;
     color: #084a58;
 
@@ -234,13 +168,11 @@ hr {
 
 .one-half p {
     font-size: 125%;
-    text-align: center;
+    text-align: justify;
     color: #084a58;
-}
-
-.one-half a {
-    text-decoration: none;
-    color: #ff7759;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    -ms-text-align-last: center;
 }
 
 .two-half {
@@ -285,10 +217,6 @@ hr {
     padding-left: auto;
     padding-right: auto;
 }
-
-.logo4 {
-    margin-bottom: 2%;
-}
 /* ---- Ikon ---- */
 
 .icon {
@@ -299,7 +227,7 @@ img.icon {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 3%;
+    padding-bottom: 1%;
 }
 
 
@@ -311,7 +239,7 @@ img.icon2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 3%;
+    padding-bottom: 1%;
 }
 
 /* ---- Ikon ---- */
@@ -574,15 +502,6 @@ footer.second {
 
 
 /*------------------------------------------------Responsive size----------------------------------------*/
-
-@media only screen and (max-width : 1200px) {
-
-    .clearfix {
-        padding: 6%;
-    }
-
-}
-
 @media only screen and (max-width : 1000px) {
     .logo {
         display: none;
@@ -590,12 +509,7 @@ footer.second {
     }
 
     .clearfix3 {
-        padding: 1%;
-    }
-
-
-    .clearfix {
-        padding: 7%;
+        padding: 10%;
     }
 }
 
@@ -621,18 +535,6 @@ footer.second {
         border: 2px solid #084a58;
     }
 
-
-    hr {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0;
-        margin-bottom: 0;
-        border-style: inset;
-        border-width: 1px;
-    }
-
-
     nav:hover ul {
         display: block;
     }
@@ -655,32 +557,31 @@ footer.second {
         max-height: 100%;
     }
 
-    .logo4 {
-        max-width: 100%;
-        max-height: 100%;
-        margin-bottom: 0;
-    }
-
     .clearfix {
-        padding: 13%;
+        padding: 15%;
     }
 
     .clearfix3 {
-        padding: 1%;
+        padding: 13%;
     }
 
     .clearfix1 {
         padding: 3%;
     }
 
-    .clearfix4 {
-        padding: 1%;
+
+    #title {
+        font-size: 180%;
+        font-family: 'Ubuntu Condensed', sans-serif;
+        text-align: center;
     }
 
-    .clearfix5 {
-        padding: 0%;
+    #order{
+        font-size: 10%;
+        padding-bottom: 2%;
+        font-family: 'Ubuntu Condensed', sans-serif;
+        text-align: center;
     }
-
 
     /*--------- Body responsive start --------*/
 
@@ -691,8 +592,6 @@ footer.second {
         text-align-last: center;
         -moz-text-align-last: center;
         -ms-text-align-last: center;
-        margin-left: 0%;
-        margin-right: 0%;
     }
 
 
@@ -740,33 +639,10 @@ footer.second {
 
 
     .one-half p {
-        text-align: center;
+        text-align: justify;
         font-size: 110%;
     }
 
-
-    .copyright{
-        width: 100%;
-        margin: 0;
-    }
-
-
-
-    .copyright h3 {
-        text-align: center;
-        font-size: 150%;
-    }
-
-    .copyright h4 {
-        text-align: center;
-        font-size: 150%;
-    }
-
-
-    .copyright ul {
-        text-align: center;
-        font-size: 110%;
-    }
 
 
     .icon img {
@@ -929,59 +805,11 @@ footer.second {
         padding: 1%;
     }
 
-    .clearfix4 {
-        padding: 1%;
-    }
-
-    .clearfix5 {
-        padding: 0%;
-    }
-
-
-    .copyright{
-        width: 100%;
-        margin: 0;
-    }
-
-
-
-    .copyright h3 {
-        text-align: center;
-        font-size: 130%;
-    }
-
-    .copyright h4 {
-        text-align: center;
-        font-size: 130%;
-    }
-
-
-    .copyright ul {
-        text-align: center;
-        font-size: 110%;
-    }
 
     #textcenter {
         margin-left: 0%;
         margin-right: 0%;
     }
-
-    .logo4 {
-        max-width: 100%;
-        max-height: 100%;
-        margin-bottom: 0;
-    }
-
-    hr {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0;
-        margin-bottom: 0;
-        border-style: inset;
-        border-width: 1px;
-    }
-
     /*----- Footer responsive mobile start ----*/
 
     footer .one-third-footer {
@@ -1030,10 +858,4 @@ footer.second {
         margin-bottom: 10%;
         padding-top: 3%;
     }
-    #upperparagraph {
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-
-
 }

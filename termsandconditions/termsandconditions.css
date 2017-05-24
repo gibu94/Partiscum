@@ -10,7 +10,7 @@ body {
     background-color: #dafffe;
     line-height: 190%;
     color: #084a58;
-    font-family: 'Ubuntu Condensed', cursive;
+    font-family: 'Ubuntu Condensed', sans-serif;
     margin: 0;
 }
 
@@ -70,7 +70,7 @@ header {
 nav {
     float: right;
     padding: 35px 35px 0 0;
-    font-family: 'Ubuntu Condensed', cursive;
+    font-family: 'Ubuntu Condensed', sans-serif;
 }
 
 #menu-icon {
@@ -213,14 +213,14 @@ hr {
     float: left;
     margin-right: 1%;
     margin-left: 1%;
-    font-family: 'Ubuntu Condensed', cursive;
+    font-family: 'Ubuntu Condensed', sans-serif;
     color: #084a58;
 
 }
 
 .one-half h1 {
     font-size: 200%;
-    font-family: 'Ubuntu Condensed', cursive;
+    font-family: 'Ubuntu Condensed', sans-serif;
     color: #084a58;
 
 }
@@ -246,7 +246,7 @@ hr {
 .two-half {
     width: 48%;
     float: left;
-    font-family: 'Ubuntu Condensed', cursive;
+    font-family: 'Ubuntu Condensed', sans-serif;
     color: #084a58;
     border: 0.5px solid #ff7759;
 }
@@ -457,7 +457,7 @@ footer {
 
 .one-third-footer h3 {
     color: #DFEAEC;
-    font-family: 'Ubuntu Condensed', cursive;
+    font-family: 'Ubuntu Condensed', sans-serif;
     text-transform: none;
     text-align: center;
     font-size: 160%;
@@ -465,7 +465,7 @@ footer {
 
 .one-third-footer h5 {
     color: #DFEAEC;
-    font-family: 'Ubuntu Condensed', cursive;
+    font-family: 'Ubuntu Condensed', sans-serif;
     text-transform: none;
     text-align: center;
     font-size: 140%;
@@ -475,7 +475,7 @@ footer {
 .one-third-footer p {
     color: #DFEAEC;
     text-align: center;
-    font-family: 'Ubuntu Condensed', cursive;
+    font-family: 'Ubuntu Condensed', sans-serif;
     text-transform: none;
     font-size: 120%;
 }
